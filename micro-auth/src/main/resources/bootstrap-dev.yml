@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://172.22.180.199
+      config:
+        server-addr: http://172.22.180.199
+        file-extension: yaml
+logging:
+  level:
+    root: debug
