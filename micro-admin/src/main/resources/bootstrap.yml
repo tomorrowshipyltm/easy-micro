@@ -1,0 +1,7 @@
+#说明: application.yml是bootstrap 通用配置， 会覆盖其它文件 同名属性
+# bootstrap.yml 是springcloud使用，服务发现serviceName, 会被特定环境dev/prod.yml 覆盖
+spring:
+  profiles:
+    active: dev
+  application:
+    name: micro-admin

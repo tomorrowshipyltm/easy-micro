@@ -11,5 +11,9 @@ spring:
     admin:
       discovery:
         ignored-services: ${spring.application.name}
+  datasource:
+    url: jdbc:mysql://172.22.180.199:3306/micro?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: root
 server:
   port: 9101

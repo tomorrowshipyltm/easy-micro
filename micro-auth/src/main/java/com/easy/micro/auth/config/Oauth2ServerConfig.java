@@ -2,6 +2,7 @@ package com.easy.micro.auth.config;
 
 import com.easy.micro.auth.component.JwtTokenEnhancer;
 import com.easy.micro.auth.service.impl.UserServiceImpl;
+import com.easy.micro.common.constant.AuthConstant;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -53,14 +54,14 @@ public class Oauth2ServerConfig extends AuthorizationServerConfigurerAdapter {
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
                 .withClient("admin-app")
-                .secret(passwordEncoder.encode("123456"))
+                .secret(passwordEncoder.encode(AuthConstant.ADMIN_CLIENT_SECRET))
                 .scopes("all")
                 .authorizedGrantTypes("password", "refresh_token")
                 .accessTokenValiditySeconds(3600*24)
                 .refreshTokenValiditySeconds(3600*24*7)
                 .and()
                 .withClient("portal-app")
-                .secret(passwordEncoder.encode("123456"))
+                .secret(passwordEncoder.encode(AuthConstant.ADMIN_CLIENT_SECRET))
                 .scopes("all")
                 .authorizedGrantTypes("password", "refresh_token")
                 .accessTokenValiditySeconds(3600*24)
@@ -95,8 +96,8 @@ public class Oauth2ServerConfig extends AuthorizationServerConfigurerAdapter {
     @Bean
     public KeyPair keyPair() {
         //从classpath下的证书中获取秘钥对
-        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("jwt.jks"), "123456".toCharArray());
-        return keyStoreKeyFactory.getKeyPair("jwt", "123456".toCharArray());
+        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("jwt.jks"), AuthConstant.ADMIN_JWT_SECRET.toCharArray());
+        return keyStoreKeyFactory.getKeyPair("jwt", AuthConstant.ADMIN_JWT_SECRET.toCharArray());
     }
 
 }
