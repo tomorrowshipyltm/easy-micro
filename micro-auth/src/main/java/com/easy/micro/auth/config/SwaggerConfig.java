@@ -18,9 +18,9 @@ public class SwaggerConfig extends BaseSwaggerConfig {
     public SwaggerProperties swaggerProperties() {
         return SwaggerProperties.builder()
                 .apiBasePackage("com.easy.micro.auth.controller")
-                .title("micro认证中心")
-                .description("micro认证中心相关接口文档")
-                .contactName("macro")
+                .title("microService认证中心")
+                .description("microService认证中心相关接口文档")
+                .contactName("tomorrowshipy")
                 .version("1.0")
                 .enableSecurity(true)
                 .build();

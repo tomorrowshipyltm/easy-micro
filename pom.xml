@@ -13,6 +13,7 @@
         <module>micro-common</module>
         <module>micro-auth</module>
         <module>micro-gateway</module>
+        <module>micro-modules</module>
     </modules>
 
     <parent>
@@ -100,13 +101,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--micro通用模块-->
+            <!--mall通用模块-->
             <dependency>
                 <groupId>com.easy.micro</groupId>
                 <artifactId>micro-common</artifactId>
                 <version>${micro-common.version}</version>
             </dependency>
-            <!--micro中MBG生成模块-->
+            <!--mall中MBG生成模块-->
             <dependency>
                 <groupId>com.easy.micro</groupId>
                 <artifactId>micro-mbg</artifactId>
@@ -238,7 +239,7 @@
                         <images>
                             <image>
                                 <!--定义镜像名称-->
-                                <name>micro/${project.name}:${project.version}</name>
+                                <name>mall/${project.name}:${project.version}</name>
                                 <!--定义镜像构建行为-->
                                 <build>
                                     <!--定义基础镜像-->

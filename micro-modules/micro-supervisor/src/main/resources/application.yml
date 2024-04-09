@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: micro-supervisor
+  profiles:
+    active: dev
+  security: # 配置登录用户名和密码
+    user:
+      name: micro
+      password: 123456
+  boot:  # 不显示springboot-admin-server的监控信息
+    admin:
+      discovery:
+        ignored-services: ${spring.application.name}
+server:
+  port: 9101
