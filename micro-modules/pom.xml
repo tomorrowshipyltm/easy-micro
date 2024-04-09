@@ -13,7 +13,5 @@
 
     <modules>
         <module>micro-supervisor</module>
-<!--        <module>micro-mbg</module>-->
-<!--        <module>micro-admin</module>-->
     </modules>
 </project>

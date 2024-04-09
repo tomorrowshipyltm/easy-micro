@@ -11,7 +11,7 @@ import com.easy.micro.common.api.ResultCode;
 import com.easy.micro.common.constant.AuthConstant;
 import com.easy.micro.common.domain.UserDto;
 import com.easy.micro.common.exception.Asserts;
-import com.easy.micro.dao.UmsAdminRoleRelationDao;
+import com.easy.micro.mapper.UmsAdminRoleRelationDao;
 import com.easy.micro.dto.UmsAdminParam;
 import com.easy.micro.dto.UpdateAdminPasswordParam;
 import com.easy.micro.mapper.UmsAdminLoginLogMapper;

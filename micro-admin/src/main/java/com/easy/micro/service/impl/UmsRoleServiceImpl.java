@@ -1,7 +1,7 @@
 package com.easy.micro.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.easy.micro.dao.UmsRoleDao;
+import com.easy.micro.mapper.UmsRoleDao;
 import com.easy.micro.mapper.UmsRoleMapper;
 import com.easy.micro.mapper.UmsRoleMenuRelationMapper;
 import com.easy.micro.mapper.UmsRoleResourceRelationMapper;
