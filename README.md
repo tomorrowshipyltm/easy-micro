@@ -9,12 +9,12 @@
 
 
 ## 项目演示
-![图1](./document/demo1.png)
+![图1](./document/picture/demo1.png)
 
 
 
 ## 技术架构
-![技术架构图](./document/a1.png)
+![技术架构图](./document/picture/a1.png)
 
 ## 项目模块
 ````   
