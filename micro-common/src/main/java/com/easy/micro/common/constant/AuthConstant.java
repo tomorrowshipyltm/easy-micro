@@ -19,6 +19,8 @@ public interface AuthConstant {
      * 后台管理client_id
      */
     String ADMIN_CLIENT_ID = "admin-app";
+    String ADMIN_CLIENT_SECRET = "micro";
+    String ADMIN_JWT_SECRET = "123456";
 
     /**
      * 前台商城client_id

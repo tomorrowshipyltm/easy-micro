@@ -9,7 +9,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: 'http://localhost:9401/micro-auth/rsa/publicKey'   #通过micro-auth controller接口获取RSA的公钥
+          jwk-set-uri: 'http://localhost:8201/micro-auth/rsa/publicKey'   #通过micro-auth controller接口获取RSA的公钥
 logging:
   level:
     root: info

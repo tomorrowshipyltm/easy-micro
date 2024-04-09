@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * 后台用户服务远程调用Service
+ * auth和admin相互远程调用
+ * auth调用micro-admin 查库，而admin login时调用auth获取token
  */
 @FeignClient("micro-admin")
 public interface UmsAdminService {
