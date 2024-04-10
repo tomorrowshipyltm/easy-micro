@@ -1,7 +1,7 @@
 ## 项目简介
 
 - `easy-micro`是一个简化微服务开发的脚手架，后端采用SpringBoot/SpringCloud+MyBatis+Oauth2、前端VUE，拥有完整的权限管理功能，开箱即用。
-- 学习开源，致敬经典。如果您在寻找Java学习项目，推荐[mall](https://github.com/macrozheng/mall)；倘若您在寻找一个微服务开发的脚手架，快速定制业务，不妨留意一下本项目，或许有所启发。
+- 致敬经典[mall](https://github.com/macrozheng/mall)，去繁化简，形成微服务开发脚手架，便于快速定制扩展业务，或许对读者有所启发。
 
 ## 特性
 - Less is More，核心模块仅包含网关和鉴权，方便业务定制
@@ -15,8 +15,7 @@
 ![技术架构图](./document/picture/architecture.png)
 
 ## 项目演示
-![获取token](./document/picture/token.png)
-![鉴权访问](./document/picture/authapi.png)
+![鉴权访问](./document/picture/token&auth.png)
 ![前端登录](./document/picture/login.png)
 
 
