@@ -23,10 +23,10 @@ spring:
             - Path=/micro-admin/**
           filters:
             - StripPrefix=1
-        - id: micro-demo
-          uri: lb://micro-demo
+        - id: micro-custom
+          uri: lb://micro-custom
           predicates:
-            - Path=/micro-demo/**
+            - Path=/micro-custom/**
           filters:
             - StripPrefix=1
   security:

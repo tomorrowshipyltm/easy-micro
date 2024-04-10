@@ -75,14 +75,14 @@ public class AuthorizationManager implements ReactiveAuthorizationManager<Author
             String userStr = jwsObject.getPayload().toString();
             UserDto userDto = JSONUtil.toBean(userStr, UserDto.class);
             /**
-             * 对于demo的url，使用了admin token，这里校验不通过
-             * 1. mall-demo的 api合并到 admin
-             * 2. demo url加到白名单
+             * 对于用户业务micro-custom的url，使用了admin token，这里校验不通过
+             * 1. micro-custom的api 通过micro-admin统一暴露,并且还要给role-admin授权api，否则403无权限
+             * 2. micro-custom url加到白名单
              * 3. 注释下面的 client-id 校验
              */
-//            if (AuthConstant.ADMIN_CLIENT_ID.equals(userDto.getClientId()) && !pathMatcher.match(AuthConstant.ADMIN_URL_PATTERN, uri.getPath())) {
-//                return Mono.just(new AuthorizationDecision(false));
-//            }
+            if (AuthConstant.ADMIN_CLIENT_ID.equals(userDto.getClientId()) && !pathMatcher.match(AuthConstant.ADMIN_URL_PATTERN, uri.getPath())) {
+                return Mono.just(new AuthorizationDecision(false));
+            }
             if (AuthConstant.PORTAL_CLIENT_ID.equals(userDto.getClientId()) && pathMatcher.match(AuthConstant.ADMIN_URL_PATTERN, uri.getPath())) {
                 return Mono.just(new AuthorizationDecision(false));
             }
