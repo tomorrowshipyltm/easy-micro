@@ -10,7 +10,6 @@
 - 前端VUE提供完整权限功能，动态控制菜单展示和API授权
 - 接口文档清晰、调试可视化，[部署文档](https://www.yuque.com/u1862689/owg1ex/bfltehvynfgccon9?singleDoc#qSteZ)
 
-
 ## 技术架构
 ![技术架构图](./document/picture/architecture.png)
 
@@ -28,7 +27,7 @@
 ├── micro-common          // 通用模块                      
 ├── micro-modules         // 业务模块
 │       └── micro-admin                           // 聚合微服务/元数据服务，对接前端 [8080]
-│       └── micro-demo                            // 用户业务微服务 
+│       └── micro-custom                          // 用户业务微服务demo
 ├──pom.xml  
 ````
 ## 技术选型
