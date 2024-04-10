@@ -13,8 +13,6 @@
         <module>micro-common</module>
         <module>micro-auth</module>
         <module>micro-gateway</module>
-        <module>micro-mbg</module>
-        <module>micro-admin</module>
         <module>micro-modules</module>
     </modules>
 
@@ -53,7 +51,6 @@
         <knife4j.version>3.0.3</knife4j.version>
         <nimbus-jose-jwt.version>9.23</nimbus-jose-jwt.version>
         <micro-common.version>1.0-SNAPSHOT</micro-common.version>
-        <micro-mbg.version>1.0-SNAPSHOT</micro-mbg.version>
     </properties>
 
     <dependencies>
@@ -108,12 +105,6 @@
                 <groupId>com.easy.micro</groupId>
                 <artifactId>micro-common</artifactId>
                 <version>${micro-common.version}</version>
-            </dependency>
-            <!--micro中MBG生成模块-->
-            <dependency>
-                <groupId>com.easy.micro</groupId>
-                <artifactId>micro-mbg</artifactId>
-                <version>${micro-mbg.version}</version>
             </dependency>
             <!--MyBatis分页插件starter-->
             <dependency>

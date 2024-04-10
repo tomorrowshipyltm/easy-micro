@@ -12,8 +12,8 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>micro-admin</module>
         <module>micro-supervisor</module>
-<!--        <module>micro-mbg</module>-->
-<!--        <module>micro-admin</module>-->
+        <module>micro-custom</module>
     </modules>
 </project>
