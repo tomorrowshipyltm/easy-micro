@@ -29,12 +29,6 @@ spring:
             - Path=/micro-demo/**
           filters:
             - StripPrefix=1
-        - id: micro-dataset
-          uri: lb://micro-dataset
-          predicates:
-            - Path=/micro-dataset/**
-          filters:
-            - StripPrefix=1
   security:
     oauth2:
       resourceserver:

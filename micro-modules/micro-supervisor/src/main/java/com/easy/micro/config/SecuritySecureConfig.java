@@ -9,7 +9,7 @@ import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 /**
  * SpringSecurity相关配置
- * Created by macro on 2019/9/30.
+ *
  */
 @Configuration
 public class SecuritySecureConfig extends WebSecurityConfigurerAdapter {
