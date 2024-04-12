@@ -45,5 +45,3 @@
 | Nginx                  | 静态资源服务器       |
 | Hutool                 | java工具类库      |
 
-## 参考
-- [mall](https://github.com/macrozheng/mall)
