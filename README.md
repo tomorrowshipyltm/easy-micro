@@ -45,3 +45,5 @@
 | Nginx                  | 静态资源服务器       |
 | Hutool                 | java工具类库      |
 
+# 附录
+- 前端[easy-micro-web](https://github.com/tomorrowshipyltm/easy-micro-web)
