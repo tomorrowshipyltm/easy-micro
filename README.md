@@ -1,6 +1,6 @@
 ## 项目简介
 
-- `easy-micro`是一个简化微服务开发的脚手架，后端采用SpringBoot/SpringCloud+MyBatis+Oauth2、前端VUE，拥有完整权限管理功能，便于快速定制业务,开箱即用。
+- `easy-micro`是一个简化微服务开发的脚手架，便于快速搭建微服务系统，拥有完整权限管理功能，开箱即用。采用主流技术，后端SpringBoot/SpringCloud+MyBatis+Oauth2, 前端VUE。
 
 ## 特性
 - Less is More，核心模块仅包含网关和鉴权，方便业务定制
