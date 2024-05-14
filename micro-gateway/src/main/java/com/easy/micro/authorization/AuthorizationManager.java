@@ -80,9 +80,9 @@ public class AuthorizationManager implements ReactiveAuthorizationManager<Author
              * 2. micro-custom url加到白名单
              * 3. 注释下面的 client-id 校验
              */
-            if (AuthConstant.ADMIN_CLIENT_ID.equals(userDto.getClientId()) && !pathMatcher.match(AuthConstant.ADMIN_URL_PATTERN, uri.getPath())) {
-                return Mono.just(new AuthorizationDecision(false));
-            }
+//            if (AuthConstant.ADMIN_CLIENT_ID.equals(userDto.getClientId()) && !pathMatcher.match(AuthConstant.ADMIN_URL_PATTERN, uri.getPath())) {
+//                return Mono.just(new AuthorizationDecision(false));
+//            }
             if (AuthConstant.PORTAL_CLIENT_ID.equals(userDto.getClientId()) && pathMatcher.match(AuthConstant.ADMIN_URL_PATTERN, uri.getPath())) {
                 return Mono.just(new AuthorizationDecision(false));
             }
