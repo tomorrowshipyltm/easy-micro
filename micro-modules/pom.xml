@@ -15,5 +15,6 @@
         <module>micro-admin</module>
         <module>micro-supervisor</module>
         <module>micro-custom</module>
+        <module>micro-blog</module>
     </modules>
 </project>
