@@ -1,0 +1,9 @@
+/* 例：修改登录页样式 */
+layout-passport > .container {
+    background-position: center !important;
+    background-repeat: repeat !important;
+    background-size: cover !important;
+    background-color: #fff !important;
+    /*background-image: url(./login-img.jpg) !important;*/
+    background-image: url(https://www.erupt.xyz/demo/login-bg.svg) !important;
+}
